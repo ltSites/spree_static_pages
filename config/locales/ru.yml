@@ -1,0 +1,16 @@
+ru:
+  itsites_static_pages:
+    title_itsites_menu: ItSites Меню
+    new_menu: Новое Меню
+    title: Меню
+    back_to_slides: Назад к списку
+    edit_slide: Редактировать Меню
+    placeholder_name: Название Меню
+    placeholder_hash_tag: Hash tag
+
+    title_itsites_blocks: ItSites Страницы
+    new_page: Новая страница
+    title_page_blocks: Страницы
+    placeholder_url: URL страницы
+    placeholder_page_name: Название страницы
+    edit_page: Изменить страницу

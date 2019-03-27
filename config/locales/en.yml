@@ -1,0 +1,16 @@
+en:
+  itsites_static_pages:
+    title_itsites_menu: ItSites Menu
+    new_menu: New Menu
+    title: Menu
+    back_to_slides: Back to list
+    edit_slide: Edit Menu
+    placeholder_name: Menu name
+    placeholder_hash_tag: Hash tag
+
+    title_itsites_blocks: ItSites Static Pages
+    new_page: New Page
+    title_page_blocks: Pages
+    placeholder_url: URL
+    placeholder_page_name: Page name
+    edit_page: Edit page

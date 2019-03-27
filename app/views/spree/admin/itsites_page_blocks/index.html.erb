@@ -1,0 +1,37 @@
+<% content_for :page_actions do %>
+  <%= button_link_to t('itsites_static_pages.new_page'), new_admin_itsites_page_block_url, { class: 'btn-success', icon: 'add', id: 'new_admin_itsites_itsites_static_pages_blocks_link' } %>
+<% end %>
+
+<% content_for :page_title do %>
+  <%= t('itsites_static_pages.title_page_blocks') %>
+<% end %>
+
+<table class="table sortable" id="listing_itsites_static_pages_blocks" data-hook >
+  <thead>
+  <tr data-hook="admin_itsites_static_pages_blocks_index_headers">
+    <th colspan="2"><%= Spree.t(:name) %></th>
+    <th><%= Spree.t(:active) %></th>
+    <th><%= Spree.t(:url) %></th>
+    <th><%= Spree.t(:menu) %></th>
+    <th data-hook="admin_itsites_static_pages_blocks_index_header_actions" class="actions"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @pages.each do |page|%>
+    <tr id="<%= spree_dom_id page %>" data-hook="admin_itsites_static_pages_blocks_index_rows">
+      <td class="no-border">
+        <span class="handle"></span>
+      </td>
+      <td class="align-center"><%= page.name %></td>
+      <td class="align-center"><%= page.active %></td>
+      <td class="align-center"><%= page.url %></td>
+      <td class="align-center"><%= page.page_menu.name %></td>
+      <td data-hook="admin_itsites_static_pages_blocks_index_row_actions" class="actions">
+        <%= link_to_edit page, no_text: true, class: 'edit' %>
+        &nbsp;
+        <%= link_to_delete page, no_text: true %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

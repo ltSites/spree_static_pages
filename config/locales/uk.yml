@@ -1,0 +1,16 @@
+uk:
+  itsites_static_pages:
+    title_itsites_menu: ItSites Меню
+    new_menu: Нове Меню
+    title: Меню
+    back_to_slides: Назад до списку
+    edit_slide: Редагувати Меню
+    placeholder_name: Назва Меню
+    placeholder_hash_tag: Hash tag
+
+    title_itsites_blocks: ItSites Сторінки
+    new_page: Нова сторінка
+    title_page_blocks: Сторінки
+    placeholder_url: URL сторінки
+    placeholder_page_name: Назва сторінки
+    edit_page: Редагувати сторінку

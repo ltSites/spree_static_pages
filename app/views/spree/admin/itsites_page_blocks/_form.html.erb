@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-md-4">
+    <%= f.field_container :name do %>
+      <%= f.label :name, t(:name) %><br>
+      <%= f.text_field :name, class: 'fullwidth form-control', placeholder: t('itsites_static_pages.placeholder_page_name') %>
+    <% end %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.field_container :url do %>
+      <%= f.label :url, t(:url) %><br>
+      <%= f.text_field :url, class: 'fullwidth form-control', placeholder: t('itsites_static_pages.placeholder_url') %>
+    <% end %>
+  </div>
+
+  <div class="col-md-1">
+    <%= f.field_container :active do %>
+      <%= f.label :active, t(:active) %><br>
+      <%= f.check_box :active, class: "form-control" %>
+    <% end %>
+  </div>
+  <div class="col-md-3">
+    <%= f.field_container :menu_id do %>
+      <%= f.label :menu_id, t(:menu_id) %><br>
+      <%= f.select :menu_id, @menus.collect{|p| [p.name, p.id]}, class: "form-control select2" %>
+    <% end %>
+  </div>
+  <div class="col-md-12">
+    <%= f.field_container :text do %>
+      <%= f.label :text, t(:text) %><br>
+      <%= f.text_area :text, class: "form-control" %>
+    <% end %>
+  </div>
+  <div class="col-md-12">
+    <%= f.field_container :seo_title do %>
+      <%= f.label :seo_title, t(:seo_title) %><br>
+      <%= f.text_field :seo_title, class: "form-control" %>
+    <% end %>
+  </div>
+  <div class="col-md-12">
+    <%= f.field_container :seo_keywords do %>
+      <%= f.label :seo_keywords, t(:seo_keywords) %><br>
+      <%= f.text_field :seo_keywords, class: "form-control" %>
+    <% end %>
+  </div>
+  <div class="col-md-12">
+    <%= f.field_container :seo_description do %>
+      <%= f.label :seo_description, t(:seo_description) %><br>
+      <%= f.text_field :seo_description, class: "form-control" %>
+    <% end %>
+  </div>
+
+</div>

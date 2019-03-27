@@ -1,0 +1,2 @@
+<!-- insert_top "[data-hook='admin_configurations_sidebar_menu']" -->
+<%= configurations_sidebar_menu_item t('itsites_static_pages.title_itsites_menu'), admin_itsites_page_menus_path %>
